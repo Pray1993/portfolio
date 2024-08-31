@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         <div className="relative border-4 border-gray-800 rounded-lg overflow-hidden shadow-lg">
           <div className="absolute inset-0 bg-blue-500 opacity-50 blur-sm"></div>
           <Image 
-            src="/images/Profile.jpg" 
+            src="/images/Profile.JPG" 
             alt="Praveen" 
             width={200} 
             height={200} 
