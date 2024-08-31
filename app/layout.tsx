@@ -1,10 +1,5 @@
 import "./globals.css";
 
-export const metadata = {
-  title: "My Portfolio",
-  description: "Welcome to my portfolio",
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -12,7 +7,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white dark:bg-gray-900">{children}</body>
+      <body className="bg-gray-900 text-white min-h-screen flex flex-col">
+        <div className="flex-grow">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
