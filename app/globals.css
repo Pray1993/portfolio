@@ -31,3 +31,35 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 5s ease infinite;
+}
